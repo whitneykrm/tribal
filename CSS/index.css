@@ -1,0 +1,83 @@
+
+body {
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+  }
+  header {
+    background-color: #333;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center; 
+    font-size: 2em;
+    margin-bottom: 1.5rem; 
+    color: antiquewhite;
+  }
+  
+  p {
+    line-height: 1.5; 
+    margin-bottom: 1rem; 
+  }
+  
+  a {
+    color: antiquewhite; 
+    padding: 5px 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 3px; 
+    margin-right: 10px; 
+    display: inline-block; 
+  }
+  
+  a:hover {
+    background-color: #eee; 
+    color: #000; 
+  }
+  
+  
+  .navigation {
+    display: flex; 
+    justify-content: center; 
+    background-color: #f0f0f0; 
+    padding: 10px 0; 
+    margin-bottom: 20px; 
+  }
+  
+  
+  .about-section {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+  }
+  
+  .restaurant-list {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  .restaurant-list li {
+    margin-bottom: 5px; 
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+ 
+ 
+  
+  
+
+  
+  
