@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    function search(){
+        const query=document
+        .getElementByld("searchInput")
+        .value.toLowerCase();
+        let url="";
+
+        switch(query){
+            case"home":
+            url="index.html";
+            break;
+            case"about us":
+            url="about.html";
+            break;
+            case"menu":
+            url="menu.html";
+            break;
+            case"feedback":
+            url="feedback.html";
+            break;
+            case"offers":
+            url="offers.html";
+            break;
+            case"bookings":
+            url="bookings.html";
+            break;
+            case"bar & longe":
+            url="bar & lounge.html";
+            break;
+            default:
+                alert("No matching page found") ;
+                return; 
+        }
+        window.location.href=url;
+    }
+</script>

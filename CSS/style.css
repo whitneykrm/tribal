@@ -1,1 +1,23 @@
-@import url('navStyle.css');
+.search-container{
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    margin-top: 60px;
+    width: 60%;
+    max-width: 600px;
+    margin: auto;
+  }
+  #searchInput {
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 25px 0 0 25px;
+    font-size: 18px;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  #searchResults {
+    font-size: 18px;
+    margin-top: 20px;
+  }

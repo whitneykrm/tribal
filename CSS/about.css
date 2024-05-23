@@ -66,6 +66,26 @@ body {
   .restaurant-list li {
     margin-bottom: 5px; 
   }
+  table{
+    border:solid 1px;
+    width:70%;
+    border-collapse: collapse;
+  }
+  td{
+    border:solid 1px;
+    padding:5px;
+    text-align: left;
+  }
+  th{
+    padding:5px;
+    text-align: left;
+  }
+  tr:nth-child(odd){
+    background-color: antiquewhite;
+  }
+  tr:hover{
+    background-color: antiquewhite;
+  }
 
   footer {
     background-color: #333;
