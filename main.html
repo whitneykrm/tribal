@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="home-body">
+    <header class="site-header">
+      <a href="#"
+        ><img
+          class="header-logo"
+          src="IMAGES/Images/Website Logo1.png"
+          alt=""
+        />
+      </a>
+
+      <h1>STARS BAKERY</h1>
+
+      <ul class="header-links">
+        <li><a class="header-link" href="index.html">Muffins</a></li>
+        <li>
+          <a class="header-link" href="about.html">Pasteries</a>
+        </li>
+        <li>
+          <a class="header-link" href="services.html">Wedding cakes</a>
+        </li>
+        <li>
+          <a class="header-link" href="bookings.html">Birthday Cakes</a>
+        </li>
+        <li>
+          <a class="header-link" href="bar & lounge.html">Cupcakes</a>
+        </li>
+        <li>
+          <a class="header-link" href="offers.html">Contacts</a>
+        </li>
+        <li>
+          <a class="header-link" href="feedback.html">About us</a>
+        </li>
+      </ul>
+    </header>
+    <p>
+      Welcome to patrick's bakery. Where we offer the moistiest and fluffiest
+      cakes and Pasteries
+    </p>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="bookings..." />
+      <button onclick="search()">Search</button>
+    </div>
+    <div id="searchResults">
+      <!-- Search results will be displayed here -->
+    </div>
+    <script>
+      function search() {
+        const query = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
+        let url = "";
+
+        switch (query) {
+          case "birthday cakes":
+            url = "Birthday.html";
+            break;
+          case "wedding cakes":
+            url = "wedding.html";
+            break;
+          case "muffins":
+            url = "muffins.html";
+            break;
+          case "pasteries":
+            url = "pasteries.html";
+            break;
+          case "cupcakes":
+            url = "Cupcakes.html";
+            break;
+          default:
+            alert("No matching page found");
+            return;
+        }
+
+        window.location.href = url;
+      }
+    </script>
+  </body>
+</html>
