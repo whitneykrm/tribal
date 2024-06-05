@@ -1,88 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bakery</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body class="home-body">
-    <header class="site-header">
-      <a href="#"
-        ><img
-          class="header-logo"
-          src="IMAGES/Images/Website Logo1.png"
-          alt=""
-        />
-      </a>
-
-      <h1>STARS BAKERY</h1>
-
-      <ul class="header-links">
-        <li><a class="header-link" href="index.html">Muffins</a></li>
-        <li>
-          <a class="header-link" href="about.html">Pasteries</a>
-        </li>
-        <li>
-          <a class="header-link" href="services.html">Wedding cakes</a>
-        </li>
-        <li>
-          <a class="header-link" href="bookings.html">Birthday Cakes</a>
-        </li>
-        <li>
-          <a class="header-link" href="bar & lounge.html">Cupcakes</a>
-        </li>
-        <li>
-          <a class="header-link" href="offers.html">Contacts</a>
-        </li>
-        <li>
-          <a class="header-link" href="feedback.html">About us</a>
-        </li>
-      </ul>
-    </header>
-    <p>
-      Welcome to patrick's bakery. Where we offer the moistiest and fluffiest
-      cakes and Pasteries
-    </p>
-
-    <div class="search-container">
-      <input type="text" id="searchInput" placeholder="bookings..." />
-      <button onclick="search()">Search</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet"href="CSS/style.css">
+</head>
+<body style="background-color: antiquewhite;"></body>
+<header>
+    <details>
+        <summary class="dropdown-toggle">
+            <span class="menu-icon"></span> Menu
+        </summary>
+        <header>
+            <a href="index.html">Home</a>
+            <a href="main.html">dropdown</a>
+<a href="about.html">About Us</a>
+<a href="services.html">services</a>
+<a href="bookings.html">bookings</a>
+<a href="offers.html">Offers</a>
+<a href="menu.html">menu</a>
+<a href="feedback.html">feedback</a>
+<a href="bar & lounge.html">bar & longe</a>
+            <!-- Your header content here -->
+        </header>
+        </details>
+        <h1>Tribal</h1> 
+    <div class="topnav-right">
+        <a href="signup.html">Sign Up</a>
+        <a href="signin.html">Sign In</a>
     </div>
-    <div id="searchResults">
-      <!-- Search results will be displayed here -->
+</header>
+<body>
+  <div class="dropdown">
+   
+      <button class="dropbtn">dropdown
+        
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">services</a>
+        <a href="#">bookings</a>
+        <a href="#">Offers</a>
+        <a href="#">menu</a>
+        <a href="#">feedback</a>
+        <a href="#">bar & longe</a> 
+      </div>
     </div>
-    <script>
-      function search() {
-        const query = document
-          .getElementById("searchInput")
-          .value.toLowerCase();
-        let url = "";
-
-        switch (query) {
-          case "birthday cakes":
-            url = "Birthday.html";
-            break;
-          case "wedding cakes":
-            url = "wedding.html";
-            break;
-          case "muffins":
-            url = "muffins.html";
-            break;
-          case "pasteries":
-            url = "pasteries.html";
-            break;
-          case "cupcakes":
-            url = "Cupcakes.html";
-            break;
-          default:
-            alert("No matching page found");
-            return;
-        }
-
-        window.location.href = url;
-      }
-    </script>
-  </body>
+  </div>
+  
+</body>
 </html>
