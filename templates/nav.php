@@ -4,15 +4,15 @@
             <span class="menu-icon"></span> Menu
         </summary>
         <header>
-            <a href="index.html">Home</a>
-            <a href="main.html">dropdown</a>
-<a href="about.html">About Us</a>
-<a href="services.html">services</a>
-<a href="bookings.html">bookings</a>
-<a href="offers.html">Offers</a>
-<a href="menu.html">menu</a>
-<a href="feedback.html">feedback</a>
-<a href="bar & lounge.html">bar & longe</a>
+            <a href="index.php">Home</a>
+            <a href="main.php">dropdown</a>
+<a href="about.php">About Us</a>
+<a href="services.php">services</a>
+<a href="bookings.php">bookings</a>
+<a href="offers.php">Offers</a>
+<a href="menu.php">menu</a>
+<a href="feedback.php">feedback</a>
+<a href="bar & lounge.php">bar & longe</a>
             <!-- Your header content here -->
         </header>
         </details>

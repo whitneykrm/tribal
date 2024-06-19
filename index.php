@@ -8,7 +8,7 @@
 </head>
 <body style="background-color: antiquewhite;"></body>
 
-<?php include_once("templates/nav.php");?php
+<?php include_once("templates/nav.php");?>
 
         <h1>Tribal</h1> 
    
