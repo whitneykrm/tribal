@@ -24,6 +24,6 @@
 <img src="images/George-Bernard-Shaw-Quote.jpg"alt = "" width = "40%">
 
 </main>
-</html>
 <?php include_once("templates/footer.php");?>
+</html>
 
