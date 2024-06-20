@@ -31,8 +31,5 @@
       </p> 
       
     </main>
-    <footer>
-        <p>&copy; 2024 Tribal. All Rights Reserved</p>
-    </footer>     
-</body>
+    <?php include_once("templates/footer.php");?>
 </html>

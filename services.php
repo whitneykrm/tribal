@@ -8,7 +8,7 @@
 </head>
 <body style="background-color: antiquewhite;"></body>
 
-    <?php
+    <?php include_once("templates/nav.php");?>
             <h1>Services</h1>
         
   
@@ -44,8 +44,5 @@
     </main>
     <br>
     <br>
-    <footer>
-        <p>&copy; 2024 Tribal. All Rights Reserved</p>
-    </footer> 
-</body>
+    <?php include_once("templates/footer.php");?>
 </html>

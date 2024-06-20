@@ -11,7 +11,6 @@
 <?php include_once("templates/nav.php");?>
 
         <h1>Tribal</h1> 
-   
 
 <main>
 <p> When it comes to food and drink, we created a global affair with a smouldering urban grill, café-bar and coffee roastery, an indoor-outdoor farm-to-table dining room and our rooftop Peruvian Melting Pot – each entirely authentic in character and cuisine.
