@@ -9,6 +9,7 @@
 <body style="background-color: antiquewhite;" >
 
 <?php include_once("templates/nav.php");?>
+
             <h1>DELICIOUS MEALS</h1>
        
     <main>
