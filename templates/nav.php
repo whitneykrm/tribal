@@ -18,7 +18,7 @@
         </details>
         
     <div class="topnav-right">
-        <a href="signup.html">Sign Up</a>
-        <a href="signin.html">Sign In</a>
+        <a href="signup.php">Sign Up</a>
+        <a href="signin.php">Sign In</a>
     </div>
 </header>
