@@ -20,7 +20,7 @@
       $subject = $_POST["subject"];
       $message = $_POST["message"];
 
-      $sql = "INSERT INTO `messages`( `sender_name`, `sender_email`, `subject_line`,`message`) VALUES ('$name','$email','$subject','$message')";
+      $sql = "INSERT INTO `feedback`( `name`, `email`, `subject`,`message`) VALUES ('$name','$email','$subject','$message')";
   
       if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";

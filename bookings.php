@@ -12,22 +12,25 @@
 
  include_once("templates/nav.php");
 
-require_once("includes/connection.php");
+ require_once("includes/connection.php");
 
-if(isset($_POST["save details"])){
-  $Fullname = $_POST["name"];
-  $Age=$_POST["Age"];
-  $email = $_POST["email"];
-  $Date = $_POST[""];
-  $Time = $_POST[""];
+ if(isset($_POST["save details"])){
+   $Fullname = $_POST["Fullname"];
+   $Age=$_POST["Age"];
+   $Email = $_POST["Email"];
+   $Bookingdate = $_POST["Bookingdate"];
+   $Bookingtime= $_POST["Bookingtime"];
+   $Gender = $_POST["Gender"];
 
-    if ($conn->query($sql) === TRUE) {
-      echo "New record created successfully";
-    } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-    
-    $conn->close();
+   $sql = "INSERT INTO `bookings`( `Fullname`, 'Age',`Email`, `Bookingdate`,`Bookingtime`,'Gender') VALUES ('$Fullname','$Age','$Email','$Bookingdate','$Bookingtime','$Gender')";
+
+   if ($conn->query($sql) === TRUE) {
+     echo "New record created successfully";
+   } else {
+     echo "Error: " . $sql . "<br>" . $conn->error;
+   }
+   
+   $conn->close();
   }
 ?>
 

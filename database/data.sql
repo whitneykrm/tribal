@@ -20,9 +20,9 @@ SET time_zone = "+00:00";
 --
 -- Database: `amet`
 --
-DROP DATABASE IF EXISTS `amet`;
-CREATE DATABASE IF NOT EXISTS `amet` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `amet`;
+DROP DATABASE IF EXISTS `Tribal`;
+CREATE DATABASE IF NOT EXISTS `Tribal` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `Tribal`;
 
 -- --------------------------------------------------------
 
