@@ -1,4 +1,4 @@
-<form action="action_page.php" method="post">
+<form action="signin.php" method="post">
 <?php 
 
 require_once("includes/connection.php");

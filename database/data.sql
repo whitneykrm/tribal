@@ -12,46 +12,31 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
---
--- Database: `amet`
---
 DROP DATABASE IF EXISTS `Tribal`;
 CREATE DATABASE IF NOT EXISTS `Tribal` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `Tribal`;
 
--- --------------------------------------------------------
 
---
--- Table structure for table `gender`
---
 
-DROP TABLE IF EXISTS `gender`;
-CREATE TABLE IF NOT EXISTS `gender` (
-  `genderId` int(1) NOT NULL AUTO_INCREMENT,
-  `gender` varchar(20) NOT NULL DEFAULT '',
+DROP TABLE IF EXISTS `bookings`;
+CREATE TABLE IF NOT EXISTS `bookings` (
+  `Fullname` varchar(20) NOT NULL AUTO_INCREMENT,
+  `Age` int(100) NOT NULL DEFAULT '',
+  'Email'varchar(30)NOT NULL DEFAULT,
   `datecreated` datetime NOT NULL DEFAULT current_timestamp(),
   `dateupdated` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  PRIMARY KEY (`genderId`),
-  UNIQUE KEY `gender` (`gender`)
+  'Gender'text DEFAULT NULL,
+  
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Truncate table before insert `gender`
---
 
-TRUNCATE TABLE `gender`;
---
--- Dumping data for table `gender`
---
 
-INSERT INTO `gender` (`genderId`, `gender`, `datecreated`, `dateupdated`) VALUES
-(1, 'Female', '2024-06-10 14:51:05', '2024-06-10 14:51:05'),
-(3, 'Rather not say', '2024-06-10 14:51:05', '2024-06-10 14:51:05');
+
+TRUNCATE TABLE `bookings`;
+
+INSERT INTO `bookings`( `Fullname`, 'Age',`Email`, `Bookingdate`,`Bookingtime`,'Gender') VALUES 
+('$Fullname','$Age','$Email','$Bookingdate','$Bookingtime','$Gender');
 
 -- --------------------------------------------------------
 
@@ -59,7 +44,7 @@ INSERT INTO `gender` (`genderId`, `gender`, `datecreated`, `dateupdated`) VALUES
 -- Table structure for table `messages`
 --
 
-DROP TABLE IF EXISTS `messages`;
+DROP TABLE IF EXISTS `feedback`;
 CREATE TABLE IF NOT EXISTS `messages` (
   `messageId` int(1) NOT NULL AUTO_INCREMENT,
   `sender_name` varchar(60) NOT NULL DEFAULT '',
@@ -90,7 +75,7 @@ INSERT INTO `messages` (`messageId`, `sender_name`, `sender_email`, `subject_lin
 -- Table structure for table `roles`
 --
 
-DROP TABLE IF EXISTS `roles`;
+DROP TABLE IF EXISTS `sign in`;
 CREATE TABLE IF NOT EXISTS `roles` (
   `roleId` int(1) NOT NULL AUTO_INCREMENT,
   `role` varchar(20) NOT NULL DEFAULT '',
@@ -120,7 +105,7 @@ INSERT INTO `roles` (`roleId`, `role`, `datecreated`, `dateupdated`) VALUES
 -- Table structure for table `users`
 --
 
-DROP TABLE IF EXISTS `users`;
+DROP TABLE IF EXISTS `signup`;
 CREATE TABLE IF NOT EXISTS `users` (
   `userId` bigint(11) NOT NULL AUTO_INCREMENT,
   `fullname` varchar(50) NOT NULL DEFAULT '',
