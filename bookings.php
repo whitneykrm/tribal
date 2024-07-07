@@ -8,7 +8,29 @@
 </head>
 <body style="background-color: antiquewhite;">
 
-<?php include_once("templates/nav.php");?>
+<?php
+
+ include_once("templates/nav.php");
+
+require_once("includes/connection.php");
+
+if(isset($_POST["save details"])){
+  $Fullname = $_POST["name"];
+  $Age=$_POST["Age"];
+  $email = $_POST["email"];
+  $Date = $_POST[""];
+  $Time = $_POST[""];
+
+    if ($conn->query($sql) === TRUE) {
+      echo "New record created successfully";
+    } else {
+      echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    
+    $conn->close();
+  }
+?>
+
             <h1>Booking form</h1>
        
     <main>
